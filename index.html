@@ -1,120 +1,51 @@
 <!doctype html>
 <html lang="hi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#123b83">
-<meta name="description" content="Sufyan Study — free online learning, notes, video lectures and practice tests.">
-<title>Sufyan Study | Learn Today, Grow Tomorrow</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sufyan Study Hub</title>
 <style>
-:root{--blue:#123b83;--blue2:#2463c9;--pale:#eef4ff;--ink:#15233b;--muted:#64748b;--line:#dce5f2;--white:#fff;--green:#16865c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7f9fd;line-height:1.5}
-a{color:var(--blue2)}button,input,select{font:inherit}.wrap{width:min(1100px,92%);margin:auto}
-header{background:var(--blue);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 16px #102d6126}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem}.logo{width:42px;height:42px;border-radius:13px;background:#fff;color:var(--blue);display:grid;place-items:center;font-size:1.5rem}
-nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-size:.93rem}nav a:hover{text-decoration:underline}
-.hero{background:linear-gradient(135deg,#123b83,#2463c9);color:#fff;padding:52px 0 46px}.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:center}.eyebrow{display:inline-block;background:#ffffff20;border:1px solid #ffffff45;border-radius:999px;padding:5px 12px;font-size:.85rem}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:15px 0}.hero p{color:#e1eaff;max-width:600px}.hero-card{background:#fff;color:var(--ink);padding:22px;border-radius:22px;box-shadow:0 14px 34px #001c4d40}.hero-card strong{font-size:1.1rem}.hero-card .stat{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0}.hero-card .stat:last-child{border:0}
-.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:11px;background:var(--blue2);color:white;padding:11px 16px;text-decoration:none;font-weight:700;cursor:pointer}.btn:hover{filter:brightness(.95)}.btn.light{background:#fff;color:var(--blue)}.btn.outline{background:#fff;border:1px solid var(--line);color:var(--blue)}
-section{padding:34px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}.section-head h2{margin:0;font-size:1.65rem}.section-head p{margin:4px 0 0;color:var(--muted)}
-.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}.tools input,.tools select,.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}.tools input{flex:1;min-width:180px}.tools select{width:auto;min-width:150px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 5px 16px #17365c08}.card h3{margin:8px 0 5px}.card p{color:var(--muted);margin:0 0 12px;font-size:.94rem}.emoji{font-size:1.65rem}.pill{display:inline-block;font-size:.78rem;border-radius:999px;background:var(--pale);color:var(--blue);padding:4px 9px;font-weight:700;margin-bottom:4px}.card .btn{width:100%;margin-top:6px}
-.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px}.resource .emoji{background:var(--pale);border-radius:12px;padding:10px}.resource .meta{flex:1}.resource h3{font-size:1rem;margin:0 0 3px}.resource p{font-size:.88rem;color:var(--muted);margin:0}
-.notice{background:#fff8e6;border:1px solid #f2dfaa;border-radius:12px;padding:12px 14px;color:#694d0c;font-size:.92rem;margin:14px 0}
-.testbox{max-width:720px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.question{border-bottom:1px solid var(--line);padding:14px 0}.question:last-of-type{border:0}.question p{font-weight:700;margin:0 0 9px}.question label{display:block;padding:5px 0;cursor:pointer}.result{font-weight:800;margin-top:12px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-info{background:var(--blue);color:white;border-radius:16px;padding:22px}.contact-info p{color:#e1eaff}.contact-form{display:grid;gap:10px}.contact-form textarea{min-height:110px;resize:vertical}
-footer{background:#0b2450;color:#dce7ff;padding:25px 0;text-align:center;font-size:.9rem}footer a{color:#fff}
-.empty{color:var(--muted);padding:20px;text-align:center;grid-column:1/-1}
-@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.resource-list,.contact-grid{grid-template-columns:1fr}nav{gap:12px}.hero{padding:36px 0}}
-@media(max-width:470px){.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.tools select{flex:1}.resource{align-items:flex-start}.resource .btn{padding:9px 10px}}
-</style>
-</head>
+:root{--navy:#13284b;--blue:#285de8;--pale:#edf3ff;--gold:#ffd166;--ink:#172033;--muted:#697386;--bg:#f5f7fb;--line:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}
+header{background:linear-gradient(120deg,#13284b,#285de8);color:white;padding:20px max(16px,calc((100% - 1100px)/2))}.brand{font-weight:850;font-size:1.5rem}.brand span{color:var(--gold)}.sub{opacity:.88;font-size:.9rem;margin-top:3px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}nav button{background:#ffffff1b;color:white;border:1px solid #ffffff3d;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer}nav button.active{background:#fff;color:var(--navy)}
+main{max-width:1100px;margin:24px auto;padding:0 16px}.hidden{display:none!important}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:center;background:white;border:1px solid var(--line);border-radius:22px;padding:26px}.hero h1{font-size:clamp(1.7rem,4vw,2.5rem);margin:10px 0}.hero p{color:var(--muted);line-height:1.7}.art{background:linear-gradient(140deg,#dceaff,#fff0c7);padding:28px;text-align:center;border-radius:18px;font-size:3rem}.art b{display:block;font-size:1rem;color:var(--navy);margin-top:10px}
+button,.btn{font:inherit;font-weight:750;border:0;border-radius:10px;padding:10px 14px;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--blue);color:white}.soft{background:var(--pale);color:var(--blue)}.danger{background:#fee2e2;color:#991b1b}.pill{display:inline-block;background:#edf2ff;color:#3446a0;padding:4px 9px;border-radius:99px;font-size:.78rem;font-weight:750;margin:3px}.muted{color:var(--muted);font-size:.91rem}
+.head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:25px 0 14px}.head h2{margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card,.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.card h3{margin:9px 0}.emoji{font-size:1.8rem}.search{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}.search input{flex:1;min-width:180px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:white;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #c7d7ff}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.wide{grid-column:1/-1}.field label{font-size:.9rem;font-weight:700;display:block;margin-bottom:5px}.notice{background:#fff7e5;border:1px solid #f4d18b;color:#6b4b08;border-radius:12px;padding:13px;line-height:1.55;margin:14px 0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.stat{background:var(--pale);border-radius:12px;padding:12px}.stat b{display:block;color:var(--blue);font-size:1.4rem}.resource{border-top:1px solid var(--line);padding-top:11px;margin-top:11px;overflow-wrap:anywhere}.resource a{color:var(--blue);font-weight:750}.empty{grid-column:1/-1;background:#fff;border:1px dashed #cbd5e1;border-radius:14px;padding:24px;text-align:center;color:var(--muted)}.divider{height:1px;background:var(--line);margin:18px 0}footer{text-align:center;color:var(--muted);padding:26px}
+@media(max-width:750px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.wide{grid-column:auto}.art{padding:16px}.stats{gap:6px}.stat{font-size:.8rem;padding:8px}.stat b{font-size:1.2rem}}
+</style></head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#home"><span class="logo">🎓</span><span>Sufyan Study<br><small style="font-size:.72rem;font-weight:500;color:#dce7ff">Learn Today | Grow Tomorrow</small></span></a>
-<nav aria-label="Main navigation"><a href="#classes">Classes</a><a href="#videos">Videos</a><a href="#notes">Notes</a><a href="#tests">Tests</a><a href="#contact">Contact</a></nav>
-</div></header>
+<header><div class="brand">🎓 Sufyan <span>Study Hub</span></div><div class="sub">सीखें • आगे बढ़ें • मुफ़्त शिक्षा</div>
+<nav><button class="active" data-tab="home">🏠 होम</button><button data-tab="courses">📚 कोर्स</button><button data-tab="upload">⬆️ वीडियो/PDF जोड़ें</button><button data-tab="live">🔴 लाइव क्लास</button><button data-tab="profile">👨‍🎓 प्रोफ़ाइल</button></nav></header>
 <main>
-<section class="hero" id="home"><div class="wrap hero-grid">
-<div><span class="eyebrow">📘 Online learning for everyone</span><h1>Padhai aasan,<br>future roshan.</h1><p>Sufyan Study par apni class chunein, video lectures dekhein, notes padhein aur practice tests se taiyari behtar banayein.</p><a class="btn light" href="#classes">Apni class chunein →</a></div>
-<div class="hero-card"><strong>✨ Aapki padhai, aapki raftaar</strong><div class="stat"><span>Classes</span><b>1–12 + JEE/NEET</b></div><div class="stat"><span>Study material</span><b>Videos & PDFs</b></div><div class="stat"><span>Practice</span><b>Free demo test</b></div><div class="stat"><span>Access</span><b>Mobile-friendly</b></div></div>
-</div></section>
-<section id="classes"><div class="wrap">
-<div class="section-head"><div><h2>Apni class chunein</h2><p>Class ya subject search karke course dhoondein.</p></div></div>
-<div class="tools"><input id="classSearch" type="search" placeholder="Class ya subject search karein…" aria-label="Search classes"><select id="levelFilter" aria-label="Filter class"><option value="all">Sabhi classes</option><option value="school">School classes</option><option value="exam">Competitive exams</option></select></div>
-<div class="grid" id="classGrid"></div>
-</div></section>
-<section id="videos" style="background:#eef4ff"><div class="wrap">
-<div class="section-head"><div><h2>🎬 Video lectures</h2><p>Yahan apne YouTube lecture links add karein.</p></div></div>
-<div class="resource-list" id="videoList"></div>
-<div class="notice">Admin tip: Neeche code mein <b>VIDEO_LINKS</b> section dhoondh kar apne YouTube links replace karein. Example link sirf placeholder hai.</div>
-</div></section>
-<section id="notes"><div class="wrap">
-<div class="section-head"><div><h2>📄 Notes & PDFs</h2><p>Chapter-wise notes aur worksheets.</p></div></div>
-<div class="resource-list" id="notesList"></div>
-<div class="notice">Apne PDFs Google Drive par upload karein, sharing setting ko sahi tarah set karein, phir <b>NOTES_LINKS</b> mein share link paste karein. Private student data ko public link na banayein.</div>
-</div></section>
-<section id="tests" style="background:#eef4ff"><div class="wrap">
-<div class="section-head"><div><h2>📝 Practice test</h2><p>Demo quiz — submit karne par score turant milega.</p></div></div>
-<form class="testbox" id="quizForm">
-<div class="question"><p>1. 12 × 3 = ?</p><label><input type="radio" name="q1" value="a"> 36</label><label><input type="radio" name="q1" value="b"> 32</label><label><input type="radio" name="q1" value="c"> 24</label></div>
-<div class="question"><p>2. Paani ka chemical formula kya hai?</p><label><input type="radio" name="q2" value="a"> CO₂</label><label><input type="radio" name="q2" value="b"> H₂O</label><label><input type="radio" name="q2" value="c"> O₂</label></div>
-<div class="question"><p>3. Suraj kis disha se nikalta hai?</p><label><input type="radio" name="q3" value="a"> Uttar</label><label><input type="radio" name="q3" value="b"> Paschim</label><label><input type="radio" name="q3" value="c"> Purab</label></div>
-<button class="btn" type="submit">Test submit karein</button><div class="result" id="quizResult" role="status" aria-live="polite"></div>
-</form>
-<p style="color:var(--muted);font-size:.9rem">Real chapter-wise tests ke liye Google Forms ka link add kar sakte hain.</p>
-</div></section>
-<section id="contact"><div class="wrap">
-<div class="section-head"><div><h2>📩 Contact / Admission</h2><p>Admission ya course ke baare mein poochhein.</p></div></div>
-<div class="contact-grid"><div class="contact-info"><h3>Sufyan Study</h3><p>Learn Today | Grow Tomorrow</p><p>📚 All classes · Online learning</p><p>WhatsApp/contact details add karne ke liye code mein <b>CONTACT_WHATSAPP</b> update karein.</p><a class="btn light" id="whatsappBtn" href="#contact">WhatsApp par poochhein</a></div>
-<form class="contact-form" id="contactForm"><input id="studentName" required placeholder="Aapka naam" aria-label="Aapka naam"><input id="studentClass" placeholder="Class / course" aria-label="Class or course"><input id="studentContact" placeholder="Email ya phone (optional)" aria-label="Email or phone"><textarea id="studentMessage" required placeholder="Aap kya jaanna chahte hain?" aria-label="Message"></textarea><button class="btn" type="submit">Message taiyar karein</button><small style="color:var(--muted)">Submit karne par message aapke device par email app mein khulega; website data ko khud store nahi karti.</small></form>
-</div></div></section>
-</main>
-<footer><div class="wrap">© <span id="year"></span> Sufyan Study · Learn Today | Grow Tomorrow<br><small>Educational demo website. Sample links ko publish karne se pehle update karein.</small></div></footer>
+<section id="home"><div class="hero"><div><span class="pill">FREE LEARNING</span><h1>हर विद्यार्थी के लिए<br>शिक्षा का साथी</h1><p>कोर्स, वीडियो लेक्चर, PDF नोट्स, टेस्ट और लाइव क्लास लिंक एक ही जगह। YouTube लिंक जोड़ें या अपनी डिवाइस से वीडियो/PDF चुनकर डेमो में जोड़ें।</p><button class="primary" onclick="tab('courses')">पढ़ाई शुरू करें →</button></div><div class="art">📚 🎥 📝<b>Learn • Practice • Grow</b></div></div>
+<div class="stats"><div class="stat"><b id="coursesN">0</b>कोर्स</div><div class="stat"><b id="resourcesN">0</b>लेक्चर/नोट्स</div><div class="stat"><b id="liveN">0</b>क्लास लिंक</div></div>
+<div class="head"><h2>📌 पढ़ाई के सेक्शन</h2></div><div class="grid"><div class="card"><div class="emoji">🏫</div><h3>स्कूल शिक्षा</h3><p class="muted">कक्षा 6–12 और बोर्ड परीक्षाएँ।</p></div><div class="card"><div class="emoji">🏆</div><h3>प्रतियोगी परीक्षाएँ</h3><p class="muted">SSC, UPSC, रेलवे और GK।</p></div><div class="card"><div class="emoji">🎓</div><h3>कॉलेज शिक्षा</h3><p class="muted">BA, B.Com और अन्य विषय।</p></div></div></section>
+<section id="courses" class="hidden"><div class="head"><h2>📚 कोर्स और सामग्री</h2></div><div class="search"><input id="search" placeholder="कोर्स/विषय खोजें..." oninput="renderCourses()"><select id="filter" onchange="renderCourses()" style="max-width:220px"><option value="">सभी सेक्शन</option><option>स्कूल शिक्षा</option><option>प्रतियोगी परीक्षाएँ</option><option>कॉलेज शिक्षा</option><option>अन्य</option></select></div><div id="courseGrid" class="grid"></div></section>
+<section id="upload" class="hidden"><div class="head"><h2>⬆️ वीडियो और PDF जोड़ें</h2></div><div class="notice">यह अभी लोकल डेमो है। चुनी गई फाइल केवल इसी ब्राउज़र की स्टोरेज सीमा के भीतर सेव करने की कोशिश होगी। बड़ी वीडियो फाइलें ब्राउज़र स्टोरेज में नहीं रखी जा सकतीं और दूसरे विद्यार्थियों को ऑनलाइन नहीं दिखेंगी। सार्वजनिक वेबसाइट के लिए क्लाउड स्टोरेज कनेक्ट करना होगा।</div><div class="panel"><h3>1. पहले कोर्स बनाएँ</h3><form id="courseForm" class="formgrid"><div class="field"><label>कोर्स का नाम *</label><input name="title" required placeholder="जैसे BA Sociology"></div><div class="field"><label>सेक्शन</label><select name="category"><option>स्कूल शिक्षा</option><option>प्रतियोगी परीक्षाएँ</option><option>कॉलेज शिक्षा</option><option>अन्य</option></select></div><div class="field"><label>कक्षा/स्तर</label><input name="level" placeholder="जैसे BA 1st Semester"></div><div class="field"><label>विषय</label><input name="subject" placeholder="जैसे समाजशास्त्र"></div><div class="field wide"><label>विवरण</label><textarea name="description" placeholder="कोर्स का विवरण"></textarea></div><button class="primary wide">कोर्स बनाएँ</button></form></div>
+<div class="panel" style="margin-top:15px"><h3>2. लेक्चर / नोट्स जोड़ें</h3><form id="resourceForm" class="formgrid"><div class="field"><label>कोर्स *</label><select id="courseSelect" name="courseId" required></select></div><div class="field"><label>प्रकार</label><select name="type"><option value="video">वीडियो लेक्चर</option><option value="note">PDF नोट्स</option><option value="test">टेस्ट/अभ्यास</option></select></div><div class="field"><label>शीर्षक *</label><input name="title" required placeholder="अध्याय 1 — परिचय"></div><div class="field"><label>YouTube/वेब लिंक (वैकल्पिक)</label><input name="url" type="url" placeholder="https://..."></div><div class="field wide"><label>या अपनी डिवाइस से वीडियो/PDF चुनें</label><input id="fileInput" name="file" type="file" accept="video/*,application/pdf,.pdf"></div><p class="muted wide">लिंक या फाइल में से कम-से-कम एक चुनें। डेमो में 8 MB तक की फाइल सेव करने की कोशिश की जाएगी।</p><button class="primary wide">सामग्री जोड़ें</button></form><p id="uploadMsg" class="muted"></p></div>
+<div class="panel" style="margin-top:15px"><h3>3. लाइव क्लास लिंक जोड़ें</h3><form id="liveForm" class="formgrid"><div class="field"><label>क्लास का नाम</label><input name="title" required placeholder="Doubt Class"></div><div class="field"><label>तारीख/समय</label><input name="time" placeholder="रविवार शाम 6 बजे"></div><div class="field wide"><label>मीटिंग लिंक</label><input name="url" type="url" required placeholder="https://..."></div><button class="primary wide">लाइव क्लास जोड़ें</button></form></div></section>
+<section id="live" class="hidden"><div class="head"><h2>🔴 लाइव क्लास लिंक</h2></div><div id="liveGrid" class="grid"></div></section>
+<section id="profile" class="hidden"><div class="head"><h2>👨‍🎓 विद्यार्थी प्रोफ़ाइल</h2></div><div class="panel"><p class="muted">यह डेमो प्रोफ़ाइल इसी डिवाइस/ब्राउज़र में सेव होगी; ऑनलाइन विद्यार्थी अकाउंट नहीं है।</p><form id="profileForm" class="formgrid"><div class="field"><label>नाम</label><input name="name" required placeholder="अपना नाम"></div><div class="field"><label>कक्षा/परीक्षा</label><input name="level" placeholder="कक्षा 11 / BA / SSC"></div><div class="field wide"><label>पसंदीदा विषय</label><input name="subject" placeholder="इतिहास, गणित, समाजशास्त्र..."></div><button class="primary wide">प्रोफ़ाइल सेव करें</button></form><p id="profileMsg" class="muted"></p><div class="divider"></div><h3>डेमो डेटा</h3><button class="soft" onclick="backup()">📥 डेटा बैकअप डाउनलोड करें</button> <button class="danger" onclick="clearData()">सभी डेमो डेटा मिटाएँ</button></div></section>
+</main><footer>© <span id="year"></span> Sufyan Study Hub • मुफ़्त शिक्षा, बेहतर भविष्य 📘</footer>
 <script>
-/* ====== OWNER SETTINGS: in values ko apne links se replace karein ====== */
-const CONTACT_WHATSAPP = ""; // Country code ke saath number, e.g. 91XXXXXXXXXX (sirf digits)
-const CONTACT_EMAIL = "";    // e.g. sufyanstudy@example.com
-
-const COURSES = [
- {name:"Class 1–5",level:"school",icon:"🌱",desc:"Foundation learning",subjects:"English, Hindi, Maths, EVS"},
- {name:"Class 6–8",level:"school",icon:"📚",desc:"Middle school",subjects:"Maths, Science, English, Hindi"},
- {name:"Class 9",level:"school",icon:"🧪",desc:"School syllabus",subjects:"Maths, Science, English, Hindi, SST"},
- {name:"Class 10",level:"school",icon:"🎯",desc:"Board exam preparation",subjects:"Maths, Science, English, Hindi, SST"},
- {name:"Class 11",level:"school",icon:"🔬",desc:"Senior secondary",subjects:"Physics, Chemistry, Maths, Biology"},
- {name:"Class 12",level:"school",icon:"🎓",desc:"Board exam preparation",subjects:"Physics, Chemistry, Maths, Biology"},
- {name:"JEE",level:"exam",icon:"🚀",desc:"Engineering entrance prep",subjects:"Physics, Chemistry, Mathematics"},
- {name:"NEET",level:"exam",icon:"🩺",desc:"Medical entrance prep",subjects:"Physics, Chemistry, Biology"}
-];
-// Replace placeholder URLs with your own public YouTube / playlist links.
-const VIDEO_LINKS = [
- {title:"Class 10 Mathematics",detail:"Chapter-wise video lectures",className:"Class 10",url:"https://www.youtube.com/"},
- {title:"Class 10 Science",detail:"Concepts and revision",className:"Class 10",url:"https://www.youtube.com/"},
- {title:"Class 12 Physics",detail:"Topic-wise lessons",className:"Class 12",url:"https://www.youtube.com/"},
- {title:"JEE / NEET preparation",detail:"Practice and concepts",className:"JEE / NEET",url:"https://www.youtube.com/"}
-];
-// Replace these URLs with Google Drive PDF share links or your notes pages.
-const NOTES_LINKS = [
- {title:"Class 10 Maths Notes",detail:"Chapter-wise PDF notes",className:"Class 10",url:"https://drive.google.com/"},
- {title:"Class 10 Science Notes",detail:"Important questions and revision",className:"Class 10",url:"https://drive.google.com/"},
- {title:"Class 12 Physics Notes",detail:"Formula sheets and notes",className:"Class 12",url:"https://drive.google.com/"},
- {title:"Class 11 Chemistry Notes",detail:"Chapter notes and practice",className:"Class 11",url:"https://drive.google.com/"}
-];
-/* ====== END OWNER SETTINGS ====== */
-const $ = id => document.getElementById(id);
-function renderClasses(){
- const q=$("classSearch").value.trim().toLowerCase(), level=$("levelFilter").value;
- const found=COURSES.filter(c=>(level==="all"||c.level===level)&&[c.name,c.desc,c.subjects].join(" ").toLowerCase().includes(q));
- $("classGrid").innerHTML=found.length?found.map(c=>`<article class="card"><span class="emoji">${c.icon}</span><h3>${c.name}</h3><p>${c.desc}</p><span class="pill">Subjects</span><p>${c.subjects}</p><a class="btn" href="#videos" data-course="${c.name}">Lectures dekhein →</a></article>`).join(""):'<div class="empty">Koi class nahi mili. Search badal kar dekhein.</div>';
-}
-function safeUrl(url){try{const u=new URL(url);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}}
-function renderResources(id,items){
- $(id).innerHTML=items.map(x=>`<article class="resource"><span class="emoji">${id==="videoList"?"▶️":"📄"}</span><div class="meta"><h3>${x.title}</h3><p>${x.className} · ${x.detail}</p></div><a class="btn" target="_blank" rel="noopener noreferrer" href="${safeUrl(x.url)}">${id==="videoList"?"Watch":"Open"}</a></article>`).join("");
-}
-$("classSearch").addEventListener("input",renderClasses);$("levelFilter").addEventListener("change",renderClasses);
-$("classGrid").addEventListener("click",e=>{const a=e.target.closest("[data-course]");if(a){/* link navigates to video section */}});
-$("quizForm").addEventListener("submit",e=>{e.preventDefault();const answers={q1:"a",q2:"b",q3:"c"};let score=0;Object.keys(answers).forEach(k=>{const selected=document.querySelector(`input[name="${k}"]:checked`);if(selected&&selected.value===answers[k])score++});$("quizResult").textContent=`Aapka score: ${score}/3 ${score===3?"— Shabash! 🎉":"— Practice jaari rakhein!"}`;});
-$("contactForm").addEventListener("submit",e=>{e.preventDefault();const msg=`Sufyan Study enquiry%0AName: ${encodeURIComponent($("studentName").value)}%0AClass: ${encodeURIComponent($("studentClass").value)}%0AContact: ${encodeURIComponent($("studentContact").value)}%0AMessage: ${encodeURIComponent($("studentMessage").value)}`;if(CONTACT_WHATSAPP){window.open(`https://wa.me/${CONTACT_WHATSAPP}?text=${msg}`,"_blank","noopener")}else if(CONTACT_EMAIL){window.location.href=`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Sufyan Study enquiry")}&body=${msg.replaceAll("%0A","%0D%0A")}`}else{const body=decodeURIComponent(msg.replaceAll("%0A","\n"));const blob=new Blob([body],{type:"text/plain"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="sufyan-study-enquiry.txt";a.click();URL.revokeObjectURL(url);alert("Contact details abhi set nahi hain. Enquiry text file download hui hai; ise apne contact ko bhej sakte hain.")}});
-if(CONTACT_WHATSAPP){$("whatsappBtn").href=`https://wa.me/${CONTACT_WHATSAPP}?text=${encodeURIComponent("Assalamualaikum, mujhe Sufyan Study ke courses ke baare mein jaankari chahiye.")}`;$("whatsappBtn").target="_blank";$("whatsappBtn").rel="noopener noreferrer"}else{$("whatsappBtn").addEventListener("click",e=>{e.preventDefault();alert("WhatsApp number add karne ke liye code mein CONTACT_WHATSAPP update karein.")})}
-renderClasses();renderResources("videoList",VIDEO_LINKS);renderResources("notesList",NOTES_LINKS);$("year").textContent=new Date().getFullYear();
-</script>
-</body></html>
+const DB='ssh_c_demo_v1',PF='ssh_profile_v1';let db={courses:[],live:[]};
+try{db=JSON.parse(localStorage.getItem(DB))||db}catch(e){}
+function save(){try{localStorage.setItem(DB,JSON.stringify(db));return true}catch(e){return false}}
+function esc(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function urlok(v){if(!v)return false;try{return ['http:','https:'].includes(new URL(v).protocol)}catch(e){return false}}
+function tab(id){document.querySelectorAll('main>section').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));if(id==='courses')renderCourses();if(id==='upload')renderSelect();if(id==='live')renderLive();if(id==='profile')loadProfile();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
+function renderCourses(){let q=(document.getElementById('search')?.value||'').toLowerCase(),f=document.getElementById('filter')?.value||'',cs=db.courses.filter(c=>(!f||c.category===f)&&[c.title,c.subject,c.level,c.description,c.category].join(' ').toLowerCase().includes(q)),el=document.getElementById('courseGrid');if(!cs.length){el.innerHTML='<div class="empty">कोई कोर्स नहीं मिला। “वीडियो/PDF जोड़ें” में जाकर कोर्स बनाएँ।</div>';return}el.innerHTML=cs.map(c=>`<article class="card"><div class="emoji">📘</div><span class="pill">${esc(c.category)}</span><h3>${esc(c.title)}</h3><p class="muted">${esc(c.level)} ${c.subject?'• '+esc(c.subject):''}</p><p>${esc(c.description)}</p>${c.resources.map(r=>`<div class="resource"><b>${r.type==='video'?'🎥':r.type==='note'?'📝':'🧪'} ${esc(r.title)}</b><br>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">लिंक खोलें ↗</a>`:''}${r.fileData?`<br><a href="${r.fileData}" download="${esc(r.fileName)}">फाइल खोलें/सेव करें ↗</a>`:''}</div>`).join('')||'<p class="muted">अभी सामग्री नहीं जोड़ी गई।</p>'}</article>`).join('')}
+function renderSelect(){let s=document.getElementById('courseSelect');s.innerHTML=db.courses.length?'<option value="">कोर्स चुनें</option>'+db.courses.map(c=>`<option value="${esc(c.id)}">${esc(c.title)}</option>`).join(''):'<option value="">पहले कोर्स बनाएँ</option>'}
+function renderLive(){document.getElementById('liveGrid').innerHTML=db.live.length?db.live.map(l=>`<div class="card"><span class="pill">🔴 CLASS LINK</span><h3>${esc(l.title)}</h3><p class="muted">${esc(l.time)}</p><a class="btn primary" href="${esc(l.url)}" target="_blank" rel="noopener">क्लास खोलें ↗</a></div>`).join(''):'<div class="empty">अभी लाइव क्लास लिंक नहीं हैं।</div>'}
+function refresh(){document.getElementById('coursesN').textContent=db.courses.length;document.getElementById('resourcesN').textContent=db.courses.reduce((n,c)=>n+c.resources.length,0);document.getElementById('liveN').textContent=db.live.length;renderCourses();renderLive();renderSelect()}
+document.getElementById('courseForm').addEventListener('submit',e=>{e.preventDefault();let f=new FormData(e.target);db.courses.push({id:Date.now().toString(),title:f.get('title').trim(),category:f.get('category'),level:f.get('level').trim(),subject:f.get('subject').trim(),description:f.get('description').trim(),resources:[]});if(!save()){db.courses.pop();alert('ब्राउज़र स्टोरेज भर गया है। छोटी फाइल/कम डेटा इस्तेमाल करें।');return}e.target.reset();refresh();document.getElementById('uploadMsg').textContent='कोर्स बन गया। अब सामग्री जोड़ सकते हैं।'});
+document.getElementById('resourceForm').addEventListener('submit',async e=>{e.preventDefault();let f=new FormData(e.target),c=db.courses.find(x=>x.id===f.get('courseId')),url=(f.get('url')||'').trim(),file=document.getElementById('fileInput').files[0];if(!c)return alert('पहले कोर्स बनाएँ और चुनें।');if(url&&!urlok(url))return alert('सही http/https लिंक डालें।');if(!url&&!file)return alert('वेब लिंक या फाइल में से एक चुनें।');if(file&&file.size>8*1024*1024)return alert('डेमो की फाइल सीमा 8 MB है। बड़ी फाइल के लिए ऑनलाइन क्लाउड स्टोरेज चाहिए।');let item={type:f.get('type'),title:f.get('title').trim(),url};if(file){item.fileName=file.name;item.fileData=await new Promise((resolve,reject)=>{let r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file)})}c.resources.push(item);if(!save()){c.resources.pop();document.getElementById('uploadMsg').textContent='फाइल/डेटा ब्राउज़र की स्टोरेज सीमा से बड़ा है। छोटी फाइल चुनें या क्लाउड स्टोरेज का उपयोग करें।';return}e.target.reset();refresh();document.getElementById('uploadMsg').textContent='सामग्री इस ब्राउज़र में सेव हो गई। यह अभी दूसरे डिवाइस पर ऑनलाइन उपलब्ध नहीं है।'});
+document.getElementById('liveForm').addEventListener('submit',e=>{e.preventDefault();let f=new FormData(e.target),u=f.get('url').trim();if(!urlok(u))return alert('सही https:// मीटिंग लिंक डालें।');db.live.push({id:Date.now().toString(),title:f.get('title').trim(),time:f.get('time').trim(),url:u});if(!save()){db.live.pop();return alert('स्टोरेज भर गया है।')}e.target.reset();refresh();alert('लाइव क्लास लिंक जोड़ा गया। ध्यान दें: यह मीटिंग होस्ट नहीं करता, केवल लिंक साझा करता है।')});
+function loadProfile(){let p={};try{p=JSON.parse(localStorage.getItem(PF))||{}}catch(e){};let f=document.getElementById('profileForm');f.elements.name.value=p.name||'';f.elements.level.value=p.level||'';f.elements.subject.value=p.subject||''}
+document.getElementById('profileForm').addEventListener('submit',e=>{e.preventDefault();let f=new FormData(e.target);localStorage.setItem(PF,JSON.stringify({name:f.get('name').trim(),level:f.get('level').trim(),subject:f.get('subject').trim()}));document.getElementById('profileMsg').textContent='प्रोफ़ाइल इसी ब्राउज़र में सेव हो गई। यह ऑनलाइन अकाउंट नहीं है।'});
+function backup(){let a=document.createElement('a'),b=new Blob([JSON.stringify(db,null,2)],{type:'application/json'});a.href=URL.createObjectURL(b);a.download='sufyan-study-hub-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function clearData(){if(confirm('सभी कोर्स, फाइलें और लाइव क्लास लिंक मिटाएँ?')){db={courses:[],live:[]};save();refresh()}}
+document.getElementById('year').textContent=new Date().getFullYear();refresh();
+</script></body></html>
