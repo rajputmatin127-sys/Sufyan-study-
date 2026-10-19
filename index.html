@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b83">
+<meta name="description" content="Sufyan Study — free online learning, notes, video lectures and practice tests.">
+<title>Sufyan Study | Learn Today, Grow Tomorrow</title>
+<style>
+:root{--blue:#123b83;--blue2:#2463c9;--pale:#eef4ff;--ink:#15233b;--muted:#64748b;--line:#dce5f2;--white:#fff;--green:#16865c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7f9fd;line-height:1.5}
+a{color:var(--blue2)}button,input,select{font:inherit}.wrap{width:min(1100px,92%);margin:auto}
+header{background:var(--blue);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 16px #102d6126}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem}.logo{width:42px;height:42px;border-radius:13px;background:#fff;color:var(--blue);display:grid;place-items:center;font-size:1.5rem}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-size:.93rem}nav a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#123b83,#2463c9);color:#fff;padding:52px 0 46px}.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:center}.eyebrow{display:inline-block;background:#ffffff20;border:1px solid #ffffff45;border-radius:999px;padding:5px 12px;font-size:.85rem}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:15px 0}.hero p{color:#e1eaff;max-width:600px}.hero-card{background:#fff;color:var(--ink);padding:22px;border-radius:22px;box-shadow:0 14px 34px #001c4d40}.hero-card strong{font-size:1.1rem}.hero-card .stat{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0}.hero-card .stat:last-child{border:0}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:11px;background:var(--blue2);color:white;padding:11px 16px;text-decoration:none;font-weight:700;cursor:pointer}.btn:hover{filter:brightness(.95)}.btn.light{background:#fff;color:var(--blue)}.btn.outline{background:#fff;border:1px solid var(--line);color:var(--blue)}
+section{padding:34px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}.section-head h2{margin:0;font-size:1.65rem}.section-head p{margin:4px 0 0;color:var(--muted)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}.tools input,.tools select,.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}.tools input{flex:1;min-width:180px}.tools select{width:auto;min-width:150px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 5px 16px #17365c08}.card h3{margin:8px 0 5px}.card p{color:var(--muted);margin:0 0 12px;font-size:.94rem}.emoji{font-size:1.65rem}.pill{display:inline-block;font-size:.78rem;border-radius:999px;background:var(--pale);color:var(--blue);padding:4px 9px;font-weight:700;margin-bottom:4px}.card .btn{width:100%;margin-top:6px}
+.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px}.resource .emoji{background:var(--pale);border-radius:12px;padding:10px}.resource .meta{flex:1}.resource h3{font-size:1rem;margin:0 0 3px}.resource p{font-size:.88rem;color:var(--muted);margin:0}
+.notice{background:#fff8e6;border:1px solid #f2dfaa;border-radius:12px;padding:12px 14px;color:#694d0c;font-size:.92rem;margin:14px 0}
+.testbox{max-width:720px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.question{border-bottom:1px solid var(--line);padding:14px 0}.question:last-of-type{border:0}.question p{font-weight:700;margin:0 0 9px}.question label{display:block;padding:5px 0;cursor:pointer}.result{font-weight:800;margin-top:12px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-info{background:var(--blue);color:white;border-radius:16px;padding:22px}.contact-info p{color:#e1eaff}.contact-form{display:grid;gap:10px}.contact-form textarea{min-height:110px;resize:vertical}
+footer{background:#0b2450;color:#dce7ff;padding:25px 0;text-align:center;font-size:.9rem}footer a{color:#fff}
+.empty{color:var(--muted);padding:20px;text-align:center;grid-column:1/-1}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.resource-list,.contact-grid{grid-template-columns:1fr}nav{gap:12px}.hero{padding:36px 0}}
+@media(max-width:470px){.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.tools select{flex:1}.resource{align-items:flex-start}.resource .btn{padding:9px 10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">🎓</span><span>Sufyan Study<br><small style="font-size:.72rem;font-weight:500;color:#dce7ff">Learn Today | Grow Tomorrow</small></span></a>
+<nav aria-label="Main navigation"><a href="#classes">Classes</a><a href="#videos">Videos</a><a href="#notes">Notes</a><a href="#tests">Tests</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">📘 Online learning for everyone</span><h1>Padhai aasan,<br>future roshan.</h1><p>Sufyan Study par apni class chunein, video lectures dekhein, notes padhein aur practice tests se taiyari behtar banayein.</p><a class="btn light" href="#classes">Apni class chunein →</a></div>
+<div class="hero-card"><strong>✨ Aapki padhai, aapki raftaar</strong><div class="stat"><span>Classes</span><b>1–12 + JEE/NEET</b></div><div class="stat"><span>Study material</span><b>Videos & PDFs</b></div><div class="stat"><span>Practice</span><b>Free demo test</b></div><div class="stat"><span>Access</span><b>Mobile-friendly</b></div></div>
+</div></section>
+<section id="classes"><div class="wrap">
+<div class="section-head"><div><h2>Apni class chunein</h2><p>Class ya subject search karke course dhoondein.</p></div></div>
+<div class="tools"><input id="classSearch" type="search" placeholder="Class ya subject search karein…" aria-label="Search classes"><select id="levelFilter" aria-label="Filter class"><option value="all">Sabhi classes</option><option value="school">School classes</option><option value="exam">Competitive exams</option></select></div>
+<div class="grid" id="classGrid"></div>
+</div></section>
+<section id="videos" style="background:#eef4ff"><div class="wrap">
+<div class="section-head"><div><h2>🎬 Video lectures</h2><p>Yahan apne YouTube lecture links add karein.</p></div></div>
+<div class="resource-list" id="videoList"></div>
+<div class="notice">Admin tip: Neeche code mein <b>VIDEO_LINKS</b> section dhoondh kar apne YouTube links replace karein. Example link sirf placeholder hai.</div>
+</div></section>
+<section id="notes"><div class="wrap">
+<div class="section-head"><div><h2>📄 Notes & PDFs</h2><p>Chapter-wise notes aur worksheets.</p></div></div>
+<div class="resource-list" id="notesList"></div>
+<div class="notice">Apne PDFs Google Drive par upload karein, sharing setting ko sahi tarah set karein, phir <b>NOTES_LINKS</b> mein share link paste karein. Private student data ko public link na banayein.</div>
+</div></section>
+<section id="tests" style="background:#eef4ff"><div class="wrap">
+<div class="section-head"><div><h2>📝 Practice test</h2><p>Demo quiz — submit karne par score turant milega.</p></div></div>
+<form class="testbox" id="quizForm">
+<div class="question"><p>1. 12 × 3 = ?</p><label><input type="radio" name="q1" value="a"> 36</label><label><input type="radio" name="q1" value="b"> 32</label><label><input type="radio" name="q1" value="c"> 24</label></div>
+<div class="question"><p>2. Paani ka chemical formula kya hai?</p><label><input type="radio" name="q2" value="a"> CO₂</label><label><input type="radio" name="q2" value="b"> H₂O</label><label><input type="radio" name="q2" value="c"> O₂</label></div>
+<div class="question"><p>3. Suraj kis disha se nikalta hai?</p><label><input type="radio" name="q3" value="a"> Uttar</label><label><input type="radio" name="q3" value="b"> Paschim</label><label><input type="radio" name="q3" value="c"> Purab</label></div>
+<button class="btn" type="submit">Test submit karein</button><div class="result" id="quizResult" role="status" aria-live="polite"></div>
+</form>
+<p style="color:var(--muted);font-size:.9rem">Real chapter-wise tests ke liye Google Forms ka link add kar sakte hain.</p>
+</div></section>
+<section id="contact"><div class="wrap">
+<div class="section-head"><div><h2>📩 Contact / Admission</h2><p>Admission ya course ke baare mein poochhein.</p></div></div>
+<div class="contact-grid"><div class="contact-info"><h3>Sufyan Study</h3><p>Learn Today | Grow Tomorrow</p><p>📚 All classes · Online learning</p><p>WhatsApp/contact details add karne ke liye code mein <b>CONTACT_WHATSAPP</b> update karein.</p><a class="btn light" id="whatsappBtn" href="#contact">WhatsApp par poochhein</a></div>
+<form class="contact-form" id="contactForm"><input id="studentName" required placeholder="Aapka naam" aria-label="Aapka naam"><input id="studentClass" placeholder="Class / course" aria-label="Class or course"><input id="studentContact" placeholder="Email ya phone (optional)" aria-label="Email or phone"><textarea id="studentMessage" required placeholder="Aap kya jaanna chahte hain?" aria-label="Message"></textarea><button class="btn" type="submit">Message taiyar karein</button><small style="color:var(--muted)">Submit karne par message aapke device par email app mein khulega; website data ko khud store nahi karti.</small></form>
+</div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Sufyan Study · Learn Today | Grow Tomorrow<br><small>Educational demo website. Sample links ko publish karne se pehle update karein.</small></div></footer>
+<script>
+/* ====== OWNER SETTINGS: in values ko apne links se replace karein ====== */
+const CONTACT_WHATSAPP = ""; // Country code ke saath number, e.g. 91XXXXXXXXXX (sirf digits)
+const CONTACT_EMAIL = "";    // e.g. sufyanstudy@example.com
+
+const COURSES = [
+ {name:"Class 1–5",level:"school",icon:"🌱",desc:"Foundation learning",subjects:"English, Hindi, Maths, EVS"},
+ {name:"Class 6–8",level:"school",icon:"📚",desc:"Middle school",subjects:"Maths, Science, English, Hindi"},
+ {name:"Class 9",level:"school",icon:"🧪",desc:"School syllabus",subjects:"Maths, Science, English, Hindi, SST"},
+ {name:"Class 10",level:"school",icon:"🎯",desc:"Board exam preparation",subjects:"Maths, Science, English, Hindi, SST"},
+ {name:"Class 11",level:"school",icon:"🔬",desc:"Senior secondary",subjects:"Physics, Chemistry, Maths, Biology"},
+ {name:"Class 12",level:"school",icon:"🎓",desc:"Board exam preparation",subjects:"Physics, Chemistry, Maths, Biology"},
+ {name:"JEE",level:"exam",icon:"🚀",desc:"Engineering entrance prep",subjects:"Physics, Chemistry, Mathematics"},
+ {name:"NEET",level:"exam",icon:"🩺",desc:"Medical entrance prep",subjects:"Physics, Chemistry, Biology"}
+];
+// Replace placeholder URLs with your own public YouTube / playlist links.
+const VIDEO_LINKS = [
+ {title:"Class 10 Mathematics",detail:"Chapter-wise video lectures",className:"Class 10",url:"https://www.youtube.com/"},
+ {title:"Class 10 Science",detail:"Concepts and revision",className:"Class 10",url:"https://www.youtube.com/"},
+ {title:"Class 12 Physics",detail:"Topic-wise lessons",className:"Class 12",url:"https://www.youtube.com/"},
+ {title:"JEE / NEET preparation",detail:"Practice and concepts",className:"JEE / NEET",url:"https://www.youtube.com/"}
+];
+// Replace these URLs with Google Drive PDF share links or your notes pages.
+const NOTES_LINKS = [
+ {title:"Class 10 Maths Notes",detail:"Chapter-wise PDF notes",className:"Class 10",url:"https://drive.google.com/"},
+ {title:"Class 10 Science Notes",detail:"Important questions and revision",className:"Class 10",url:"https://drive.google.com/"},
+ {title:"Class 12 Physics Notes",detail:"Formula sheets and notes",className:"Class 12",url:"https://drive.google.com/"},
+ {title:"Class 11 Chemistry Notes",detail:"Chapter notes and practice",className:"Class 11",url:"https://drive.google.com/"}
+];
+/* ====== END OWNER SETTINGS ====== */
+const $ = id => document.getElementById(id);
+function renderClasses(){
+ const q=$("classSearch").value.trim().toLowerCase(), level=$("levelFilter").value;
+ const found=COURSES.filter(c=>(level==="all"||c.level===level)&&[c.name,c.desc,c.subjects].join(" ").toLowerCase().includes(q));
+ $("classGrid").innerHTML=found.length?found.map(c=>`<article class="card"><span class="emoji">${c.icon}</span><h3>${c.name}</h3><p>${c.desc}</p><span class="pill">Subjects</span><p>${c.subjects}</p><a class="btn" href="#videos" data-course="${c.name}">Lectures dekhein →</a></article>`).join(""):'<div class="empty">Koi class nahi mili. Search badal kar dekhein.</div>';
+}
+function safeUrl(url){try{const u=new URL(url);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}}
+function renderResources(id,items){
+ $(id).innerHTML=items.map(x=>`<article class="resource"><span class="emoji">${id==="videoList"?"▶️":"📄"}</span><div class="meta"><h3>${x.title}</h3><p>${x.className} · ${x.detail}</p></div><a class="btn" target="_blank" rel="noopener noreferrer" href="${safeUrl(x.url)}">${id==="videoList"?"Watch":"Open"}</a></article>`).join("");
+}
+$("classSearch").addEventListener("input",renderClasses);$("levelFilter").addEventListener("change",renderClasses);
+$("classGrid").addEventListener("click",e=>{const a=e.target.closest("[data-course]");if(a){/* link navigates to video section */}});
+$("quizForm").addEventListener("submit",e=>{e.preventDefault();const answers={q1:"a",q2:"b",q3:"c"};let score=0;Object.keys(answers).forEach(k=>{const selected=document.querySelector(`input[name="${k}"]:checked`);if(selected&&selected.value===answers[k])score++});$("quizResult").textContent=`Aapka score: ${score}/3 ${score===3?"— Shabash! 🎉":"— Practice jaari rakhein!"}`;});
+$("contactForm").addEventListener("submit",e=>{e.preventDefault();const msg=`Sufyan Study enquiry%0AName: ${encodeURIComponent($("studentName").value)}%0AClass: ${encodeURIComponent($("studentClass").value)}%0AContact: ${encodeURIComponent($("studentContact").value)}%0AMessage: ${encodeURIComponent($("studentMessage").value)}`;if(CONTACT_WHATSAPP){window.open(`https://wa.me/${CONTACT_WHATSAPP}?text=${msg}`,"_blank","noopener")}else if(CONTACT_EMAIL){window.location.href=`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Sufyan Study enquiry")}&body=${msg.replaceAll("%0A","%0D%0A")}`}else{const body=decodeURIComponent(msg.replaceAll("%0A","\n"));const blob=new Blob([body],{type:"text/plain"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="sufyan-study-enquiry.txt";a.click();URL.revokeObjectURL(url);alert("Contact details abhi set nahi hain. Enquiry text file download hui hai; ise apne contact ko bhej sakte hain.")}});
+if(CONTACT_WHATSAPP){$("whatsappBtn").href=`https://wa.me/${CONTACT_WHATSAPP}?text=${encodeURIComponent("Assalamualaikum, mujhe Sufyan Study ke courses ke baare mein jaankari chahiye.")}`;$("whatsappBtn").target="_blank";$("whatsappBtn").rel="noopener noreferrer"}else{$("whatsappBtn").addEventListener("click",e=>{e.preventDefault();alert("WhatsApp number add karne ke liye code mein CONTACT_WHATSAPP update karein.")})}
+renderClasses();renderResources("videoList",VIDEO_LINKS);renderResources("notesList",NOTES_LINKS);$("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
